@@ -1,9 +1,7 @@
 from flask import Flask, render_template, request, redirect,jsonify
 import pymongo as connection
 
-
-def createApp():
-    app = Flask(__name__)
+app = Flask(__name__)
 
 # Connecting to the mongoDB database server
 default_url = "mongodb://localhost:27017/"
