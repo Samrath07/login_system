@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block content %}
+
+<nav class="navbar-dark">
+    <p class="sc-login">LOGIN</p>
+  </nav>
+  <div>
+      <form class="loginForm" action="/login" method="POST">
+       
+          <div>
+              <input class="email" type="text" placeholder=" Email" name="email">
+          </div>
+          <div>
+              <input class= "password" type="password" placeholder=" Password" name="password">
+          </div>
+              <button class = "btn-submit" type="submit">{%block button%}Login{%endblock%}</button>
+              
+          </div>
+          
+      </form>
+  </div>
+{% endblock %}
