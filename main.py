@@ -86,8 +86,6 @@ def register():
         username = request.form['username']
         email = request.form['email']
         password = request.form['password']
-
-
         record = {
            "Username":username,
            "Email":email,
